@@ -37,42 +37,7 @@ const Dashboard = () => {
       </div>
 
       {/* Content */}
-      <div className="dashboard-content">
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <h1>Dashboard</h1>
-          <div>
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl>
-          </div>
-        </div>
-
-        <div className="filters-container">
-          {/* <input className="inputbox" /> */}
-        </div>
-        <div className="chart-container">
+      <div className="chart-container" style={{marginTop:"20px"}}>
           <div className="number-boxes">
             <div className="num-box">
               JobOpportunities <div className="box-count">8</div>
@@ -141,7 +106,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   )
 }
