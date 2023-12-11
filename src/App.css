@@ -213,3 +213,14 @@ tr{
   background-color: white;
   padding: 10px;
 }
+
+.mui-inputbox{
+  background-color: white;
+}
+
+
+.input-box{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}

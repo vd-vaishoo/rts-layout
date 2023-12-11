@@ -13,6 +13,7 @@ import ProjectName from './pages/ProjectName';
 import PrimarySkills from './pages/PrimarySkills';
 import TechStack from './pages/TechStack';
 import WorkLocations from './pages/WorkLocations';
+import JoFormNew from './components/Forms/JoFormNew';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/jobopportunities" element={<JobOpportunities />} />
+        <Route path="/jobopportunities/new" element={<JoFormNew/>}/>
         <Route path="/jobpositionrequest" element={<JobPositionRequest />} />
         <Route path="/user" element={<User />} />
         <Route path="/user/usermanagement" element={<UserManagement />} />

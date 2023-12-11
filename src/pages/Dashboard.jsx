@@ -40,19 +40,19 @@ const Dashboard = () => {
       <div className="chart-container" style={{marginTop:"20px"}}>
           <div className="number-boxes">
             <div className="num-box">
-              JobOpportunities <div className="box-count">8</div>
+              JobOpportunities <div className="box-count">19</div>
             </div>
             <div className="num-box">
-              Job Requests <div className="box-count">8</div>
+              Job Requests <div className="box-count">17</div>
             </div>
             <div className="num-box">
-              Pending Requests <div className="box-count">8</div>
+              Direct JPR <div className="box-count">1</div>
             </div>
             <div className="num-box">
-              Approved Requests <div className="box-count">8</div>
+              Approved <div className="box-count">6</div>
             </div>
             <div className="num-box">
-              Rejected Requests <div className="box-count">8</div>
+              Rejected <div className="box-count">3</div>
             </div>
           </div>
           <div className="charts">
@@ -65,8 +65,7 @@ const Dashboard = () => {
                     data: [
                       
                       "Active",
-                      "Saved",
-                      "Submitted",
+                      "Initiated",
                       "Published",
                     ],
                     scaleType: "band",
@@ -74,7 +73,7 @@ const Dashboard = () => {
                 ]}
                 series={[
                   {
-                    data: [ 5, 3, 6, 4],
+                    data: [ 14, 3, 2 ],
                     color: ["pink"],
                     label: "Job Opportunities count",
                   },
@@ -89,13 +88,13 @@ const Dashboard = () => {
                 xAxis={[
                   {
                     id: "barCategories",
-                    data: ["Next Approval","Sent back", "Pending", "Approved", "Rejected"],
+                    data: ["Sent For Approval","Sent For Next Approval","Sent back", "Withdrawn", "Approved", "Rejected"],
                     scaleType: "band",
                   },
                 ]}
                 series={[
                   {
-                    data: [5,12, 5, 3, 6],
+                    data: [10, 7, 8, 3, 1,4],
                     color: "rgb(139, 126, 252)",
                     label: "Job Requests count",
                   },
