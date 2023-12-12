@@ -42,7 +42,7 @@ const UserManagement = () => {
               <td>Edit</td>
               <td>Delete</td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
 
             <tr
               style={{
@@ -60,7 +60,7 @@ const UserManagement = () => {
               <td><RiDeleteBin6Line /></td>
               
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",

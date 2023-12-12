@@ -41,7 +41,7 @@ const ProjectName = () => {
               <td>Status</td>
               <td>Actions</td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
 
             <tr
               style={{
@@ -64,7 +64,7 @@ const ProjectName = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -86,7 +86,7 @@ const ProjectName = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             
             
             

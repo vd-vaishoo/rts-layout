@@ -40,7 +40,7 @@ const WorkLocations = () => {
               <td>Status</td>
               <td>Actions</td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
 
             <tr
               style={{
@@ -63,7 +63,7 @@ const WorkLocations = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -85,7 +85,7 @@ const WorkLocations = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -107,7 +107,7 @@ const WorkLocations = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -129,9 +129,9 @@ const WorkLocations = () => {
                 
               </td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             
-            <br />
+            <div style={{height:"10px"}}></div>
             
           </table>
         </div>

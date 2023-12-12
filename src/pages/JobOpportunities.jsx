@@ -50,8 +50,8 @@ const JobOpportunities = () => {
               <td>Status</td>
               <td>Actions</td>
             </tr>
-            <br/>
-            {/* <div style={{height:"10px"}}></div> */}
+            {/* <br/> */}
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -79,7 +79,8 @@ const JobOpportunities = () => {
                 <AiOutlineExport />
               </td>
             </tr>
-            <br />
+            {/* <br /> */}
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -107,7 +108,8 @@ const JobOpportunities = () => {
                 <AiOutlineExport />
               </td>
             </tr>
-            <br />
+            {/* <br /> */}
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -135,7 +137,8 @@ const JobOpportunities = () => {
                 <AiOutlineExport />
               </td>
             </tr>
-            <br />
+            {/* <br /> */}
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -163,7 +166,8 @@ const JobOpportunities = () => {
                 <AiOutlineExport />
               </td>
             </tr>
-            <br />
+            {/* <br /> */}
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -191,7 +195,8 @@ const JobOpportunities = () => {
                 <AiOutlineExport />
               </td>
             </tr>
-            <br />
+            {/* <br /> */}
+            <div style={{height:"10px"}}></div>
             
           </table>
       </div>

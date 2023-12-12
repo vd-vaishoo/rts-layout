@@ -38,7 +38,7 @@ const RoleManagement = () => {
               <td>Edit</td>
               <td>Delete</td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
 
             <tr
               style={{
@@ -53,7 +53,7 @@ const RoleManagement = () => {
               <td><GoPencil /></td>
               <td><RiDeleteBin6Line /></td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -67,7 +67,7 @@ const RoleManagement = () => {
               <td><GoPencil /></td>
               <td><RiDeleteBin6Line /></td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -81,7 +81,7 @@ const RoleManagement = () => {
               <td><GoPencil /></td>
               <td><RiDeleteBin6Line /></td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -95,7 +95,7 @@ const RoleManagement = () => {
               <td><GoPencil /></td>
               <td><RiDeleteBin6Line /></td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -109,7 +109,7 @@ const RoleManagement = () => {
               <td><GoPencil /></td>
               <td><RiDeleteBin6Line /></td>
             </tr>
-            <br />
+            <div style={{height:"10px"}}></div>
             
             
             
