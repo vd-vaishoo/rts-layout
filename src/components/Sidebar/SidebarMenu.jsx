@@ -60,6 +60,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, setIsOpen }) => {
                 animate="show"
                 exit="hidden"
                 className="link_text"
+                style={{cursor:"pointer"}}
               >
                 {route.name}
               </motion.div>

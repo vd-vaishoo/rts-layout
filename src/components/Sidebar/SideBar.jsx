@@ -1,34 +1,35 @@
 import { NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
-import { BiAnalyse, BiSearch } from "react-icons/bi";
-import { BiCog } from "react-icons/bi";
-import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+import {
+  BarChartOutlined,
+  WorkOutlineOutlined,
+  PlaylistAdd,
+  PersonOutlineOutlined,
+  Storage
+} from '@mui/icons-material';
 
 const routes = [
   {
     path: "/",
     name: "Dashboard",
-    icon: <FaHome />,
+    icon: <BarChartOutlined />
   },
   {
     path: "/jobopportunities",
     name: "Job Opportunities",
-    icon: <FaUser />,
+    icon: <WorkOutlineOutlined />,
   },
   {
     path: "/jobpositionrequest",
     name: "Job Position Request",
-    icon: <MdMessage />,
+    icon: <PlaylistAdd />,
   },
   {
     path: "/user",
     name: "User",
-    icon: <FaUser />,
+    icon: <PersonOutlineOutlined />,
     subRoutes: [
       {
         path: "/user/usermanagement",
@@ -43,7 +44,7 @@ const routes = [
   {
     path: "/masterdata",
     name: "Master Data",
-    icon: <BiCog />,
+    icon: <Storage />,
     exact: true,
     subRoutes: [
       {
@@ -72,7 +73,7 @@ const routes = [
 ];
 
 const SideBar = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
   const inputAnimation = {
     hidden: {
@@ -116,7 +117,6 @@ const SideBar = ({ children }) => {
         <motion.div
           animate={{
             width: isOpen ? "200px" : "45px",
-
             transition: {
               duration: 0.5,
               type: "spring",
@@ -126,9 +126,9 @@ const SideBar = ({ children }) => {
           className={`sidebar `}
         >
           <div className="top_section">
-            <div className="bars">
+            {/* <div className="bars">
               <FaBars onClick={toggle} />
-            </div>
+            </div> */}
             <AnimatePresence>
               {isOpen && (
                 <motion.h1
@@ -138,30 +138,20 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                  <img src="https://www.vuedata.com/assets/vuedata%20light.png" width="200px" height="22px" style={{ paddingTop: "0px" }}/><br/><br/>
-                  {/* <span style={{paddingLeft:"50px",fontSize:'10px',fontWeight:"lighter"}}>Job Requisiton System</span> */}
+                  <img src="assets/Vuedata.svg" alt="Vuedata Logo" width="200px" height="30px"/>
+                  
                 </motion.h1>
+                
               )}
             </AnimatePresence>
+            <br/>
+            
 
             
           </div>
+          <div style={{textAlign:"center",fontSize:"12px"}}>Job Requisition System</div>
           <div className="search">
-            {/* <div className="search_icon">
-              <BiSearch />
-            </div> */}
-            {/* <AnimatePresence>
-              {isOpen && (
-                <motion.input
-                  initial="hidden"
-                  animate="show"
-                  exit="hidden"
-                  variants={inputAnimation}
-                  type="text"
-                  placeholder="Search"
-                />
-              )}
-            </AnimatePresence> */}
+            
           </div>
           <section className="routes">
             {routes.map((route, index) => {
@@ -175,7 +165,6 @@ const SideBar = ({ children }) => {
                   />
                 );
               }
-
               return (
                 <NavLink
                   to={route.path}
@@ -201,6 +190,8 @@ const SideBar = ({ children }) => {
               );
             })}
           </section>
+
+          
         </motion.div>
 
         <main>{children}</main>

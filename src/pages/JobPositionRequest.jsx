@@ -1,19 +1,17 @@
 import React from 'react';
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import {
   AccordionDetails,
   Typography,
   Accordion,
   AccordionSummary,
 } from "@mui/material";
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { IoEyeOutline } from "react-icons/io5";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { GoPencil } from "react-icons/go";
-import { RiDeleteBin6Line } from "react-icons/ri";
-import { VscCopy } from "react-icons/vsc";
-import { AiOutlineExport } from "react-icons/ai";
-import { IoAdd } from "react-icons/io5";
+import Dropdown from '../components/Dropdown';
+import NewButton from '../components/NewButton';
+import ExportButton from '../components/ExportButton';
+
 
 const JobPositionRequest = () => {
   const [expanded, setExpanded] = React.useState("panel1");
@@ -25,97 +23,23 @@ const JobPositionRequest = () => {
     <div>
       <div className='topbar'>
 	      <div className='title'>Job Opportunities</div>
-        <div><img src="../assets/login-logo.png" width="60px" height="50px"/></div>
+        <div className='login-icon'>A</div>
       </div>
 
       {/* Filters */}
       <div className='filterbar'>
           <div>
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl>
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl>
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl> 
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl> 
+            <Dropdown/>
+            <Dropdown/>
+            <Dropdown/>
+            <Dropdown/>
           </div>
-          <div><button className="blue-btn">Export</button></div>
+          <div><ExportButton/></div>
       </div>
 
       {/* JR content */}
       <div className="table-container" style={{marginTop:"20px"}}>
-		<div>
-            <button className="blue-btn">New</button>
-          </div>
+		    <div><NewButton/></div>
         <div style={{ maxHeight: "430px", width: "100%" }}>
           <table style={{ padding: "10px 0px", width: "100%"  }}>
             <tr

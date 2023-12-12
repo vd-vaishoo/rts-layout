@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #f5f5f5;
 
+}
 .main-container {
   display: flex;
   position: relative;
+  background-color: #f5f5f5;
+
   
 }
 main {
@@ -22,12 +27,14 @@ main {
   font-size: 2rem;
   display: grid;
   place-items: center;
+  font-weight:500;
 }
 
 /* Sidebar */
 .sidebar {
   /* background: rgb(0, 7, 61); */
   background:linear-gradient(to right, #2196F3,#21c6f3);
+  background: linear-gradient(136deg, rgba(52, 118, 246, 0.89) 0%, #22DBE7 100%);
   color: white;
   height: 100vh;
   overflow-y: auto;
@@ -40,11 +47,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 15px 0px;
 }
 .logo {
-  font-size: 18px;
   line-height: 0;
+  padding-left: 0px;
 }
 .bars {
   width: 30px;
@@ -90,12 +97,18 @@ main {
   background-color: white;
   color:#2196F3;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 10px;
 }
 .active {
   border-right: 4px solid white;
   background: rgb(45, 51, 89);
   background: #fff;
   color:#2196F3;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 10px;
 }
 .link_text {
   white-space: nowrap;
@@ -149,12 +162,16 @@ main {
 }
 
 .blue-btn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border: none;
   color:white;
   height: 40px;
-  width: 130px;
+  width: 110px;
   border-radius: 5px;
   background:linear-gradient(to bottom, #2196F3,#21c6f3);
+  background: linear-gradient(136deg, rgba(52, 118, 246, 0.89) 0%, #22DBE7 100%);
   cursor: pointer;
 }
 table {
@@ -162,14 +179,16 @@ table {
 }
 tr{
   padding: 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
 }
 .table-container{
   display: flex;
   flex-direction: column;
-  /* border: 3px solid rgb(99, 196, 234); */
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  min-height: 455px;
+  min-height: 450px;
   padding: 10px 15px;
 }
 
@@ -177,9 +196,7 @@ tr{
 .chart-container{
   display: flex;
   flex-direction: column;
-  /* border: 3px solid rgb(99, 196, 234); */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
   height: 460px;
   padding: 10px 15px;
 }
@@ -207,7 +224,7 @@ tr{
   justify-content: space-between;
 }
 .chart1,.chart2{
-  width: 47%;
+  width: 48%;
   height: 340px;
   border-radius: 5px;
   background-color: white;
@@ -216,11 +233,29 @@ tr{
 
 .mui-inputbox{
   background-color: white;
+  border:0;
+  border-radius: 5px;
+  color:black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 
 
 .input-box{
   height: 30px;
   border-radius: 5px;
-  border: 1px solid gainsboro;
+}
+
+
+.login-icon{
+  width: 40px;
+  height: 40px;
+  background-color: #dff1f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border:1px solid #21c6f3;
+  color:#2196F3;
+  font-weight: bold;
 }

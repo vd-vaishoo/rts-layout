@@ -1,54 +1,29 @@
 import React from 'react';
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
-import { Link,Outlet } from "react-router-dom";
-import { IoEyeOutline } from "react-icons/io5";
 import { GoPencil } from "react-icons/go";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import { VscCopy } from "react-icons/vsc";
-import { AiOutlineExport } from "react-icons/ai";
+import Dropdown from '../components/Dropdown';
+import NewButton from '../components/NewButton';
+
+
 
 const RoleManagement = () => {
   return (
     <div>
+      {/* Page Title & Login */}
       <div className='topbar'>
         <div className='title'>User</div>
-        <div><img src="../assets/login-logo.png" width="60px" height="50px"/></div>
+        <div className='login-icon'>A</div>
       </div>
       <div className='submenu-title'>Role Management</div>
       
       {/* Filters */}
       <div className='filterbar'>
-      <div>
-            <FormControl
-              className="mui-inputbox"
-              sx={{ m: 1, minWidth: 140 }}
-              size="small"
-            >
-              <InputLabel id="demo-select-small-label">Month</InputLabel>
-              <Select
-                labelId="demo-select-small-label"
-                id="demo-select-small"
-                label="Month"
-              >
-                {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
-                <MenuItem value={10}>Month</MenuItem>
-                <MenuItem value={20}>Week</MenuItem>
-                <MenuItem value={30}>Custom</MenuItem>
-              </Select>
-            </FormControl>
-          </div>
+           <div><Dropdown/></div>
       </div>
 
       {/* User - Role Management */}
       <div className="table-container" style={{marginTop:"20px"}}>
-          <div>
-            <Link to="/jobopportunities/new">
-            <button className="blue-btn">New</button>
-            </Link>
-            
-          </div>
+          <div><NewButton/></div>
           <table style={{ paddingTop: "10px" }}>
             <tr
               style={{
@@ -140,7 +115,7 @@ const RoleManagement = () => {
             
             
           </table>
-        </div>
+      </div>
 
     </div>
   )
