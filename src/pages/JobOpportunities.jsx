@@ -33,7 +33,7 @@ const JobOpportunities = () => {
           <div>
             <NewButton/>  
           </div>
-          <table style={{ paddingTop: "10px" }}>
+          <table style={{ paddingTop: "5px" }}>
             <tr
               style={{
                 backgroundColor: "#2196F3",
@@ -51,7 +51,7 @@ const JobOpportunities = () => {
               <td>Actions</td>
             </tr>
             {/* <br/> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -80,7 +80,7 @@ const JobOpportunities = () => {
               </td>
             </tr>
             {/* <br /> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -109,7 +109,7 @@ const JobOpportunities = () => {
               </td>
             </tr>
             {/* <br /> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -138,7 +138,7 @@ const JobOpportunities = () => {
               </td>
             </tr>
             {/* <br /> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -167,7 +167,7 @@ const JobOpportunities = () => {
               </td>
             </tr>
             {/* <br /> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             <tr
               style={{
                 backgroundColor: "white",
@@ -196,7 +196,7 @@ const JobOpportunities = () => {
               </td>
             </tr>
             {/* <br /> */}
-            <div style={{height:"10px"}}></div>
+            <div style={{height:"5px"}}></div>
             
           </table>
       </div>
