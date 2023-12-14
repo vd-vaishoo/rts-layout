@@ -6,7 +6,7 @@ const Dropdown = () => {
   return (
 	<><FormControl
 	className="mui-inputbox"
-	sx={{ m: 1, minWidth: 140 }}
+	sx={{ m: 1, minWidth: 100, height: 32, fontSize: 14 }}
 	size="small"
   >
 	<InputLabel id="demo-select-small-label">Month</InputLabel>

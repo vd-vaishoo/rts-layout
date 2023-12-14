@@ -29,7 +29,7 @@ const JobOpportunities = () => {
       </div>
 
       {/* JO table section */}
-      <div className="table-container" style={{marginTop:"20px"}}>
+      <div className="table-container" style={{marginTop:"10px"}}>
           <div>
             <NewButton/>  
           </div>
@@ -39,7 +39,7 @@ const JobOpportunities = () => {
                 backgroundColor: "#2196F3",
                 color: "white",
                 textAlign: "center",
-                height: "45px",
+                height: "32px",
               }}
             >
               <td>JOC Id</td>
@@ -57,7 +57,7 @@ const JobOpportunities = () => {
                 backgroundColor: "white",
                 color: "black",
                 textAlign: "center",
-                height: "40px",
+                height: "32px",
                 borderRadius: "5px",
               }}
             >
@@ -86,7 +86,7 @@ const JobOpportunities = () => {
                 backgroundColor: "white",
                 color: "black",
                 textAlign: "center",
-                height: "40px",
+                height: "32px",
                 borderRadius: "5px",
               }}
             >
@@ -115,7 +115,7 @@ const JobOpportunities = () => {
                 backgroundColor: "white",
                 color: "black",
                 textAlign: "center",
-                height: "40px",
+                height: "32px",
                 borderRadius: "5px",
               }}
             >
@@ -144,7 +144,7 @@ const JobOpportunities = () => {
                 backgroundColor: "white",
                 color: "black",
                 textAlign: "center",
-                height: "40px",
+                height: "32px",
                 borderRadius: "5px",
               }}
             >
@@ -173,7 +173,152 @@ const JobOpportunities = () => {
                 backgroundColor: "white",
                 color: "black",
                 textAlign: "center",
-                height: "40px",
+                height: "32px",
+                borderRadius: "5px",
+              }}
+            >
+              <td>JOC5</td>
+              <td>Precision Health Consultants</td>
+              <td>9</td>
+              <td>Arul Subramanian</td>
+              <td>Arul Subramanian</td>
+              <td>Submitted</td>
+              <td>
+                <IoEyeOutline />
+                &nbsp;
+                <GoPencil />
+                &nbsp;
+                <RiDeleteBin6Line />
+                &nbsp;&nbsp;
+                <VscCopy />
+                &nbsp;&nbsp;
+                <AiOutlineExport />
+              </td>
+            </tr>
+            {/* <br /> */}
+            <div style={{height:"5px"}}></div>
+            <tr
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                textAlign: "center",
+                height: "32px",
+                borderRadius: "5px",
+              }}
+            >
+              <td>JOC1</td>
+              <td>ABC Corporation</td>
+              <td>5</td>
+              <td>Sadhasivam</td>
+              <td>Arul Subramanian</td>
+              <td>Active</td>
+              <td>
+                <IoEyeOutline />
+                &nbsp;
+                <GoPencil />
+                &nbsp;
+                <RiDeleteBin6Line />
+                &nbsp;&nbsp;
+                <VscCopy />
+                &nbsp;&nbsp;
+                <AiOutlineExport />
+              </td>
+            </tr>
+            {/* <br /> */}
+            <div style={{height:"5px"}}></div>
+            <tr
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                textAlign: "center",
+                height: "32px",
+                borderRadius: "5px",
+              }}
+            >
+              <td>JOC2</td>
+              <td>Precision Health Consultants</td>
+              <td>9</td>
+              <td>Arul Subramanian</td>
+              <td>Arul Subramanian</td>
+              <td>Submitted</td>
+              <td>
+                <IoEyeOutline />
+                &nbsp;
+                <GoPencil />
+                &nbsp;
+                <RiDeleteBin6Line />
+                &nbsp;&nbsp;
+                <VscCopy />
+                &nbsp;&nbsp;
+                <AiOutlineExport />
+              </td>
+            </tr>
+            {/* <br /> */}
+            <div style={{height:"5px"}}></div>
+            <tr
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                textAlign: "center",
+                height: "32px",
+                borderRadius: "5px",
+              }}
+            >
+              <td>JOC3</td>
+              <td>Pinnacle Innovations Labs</td>
+              <td>4</td>
+              <td>Muru Ganesan</td>
+              <td>Arul Subramanian</td>
+              <td>Saved</td>
+              <td>
+                <IoEyeOutline />
+                &nbsp;
+                <GoPencil />
+                &nbsp;
+                <RiDeleteBin6Line />
+                &nbsp;&nbsp;
+                <VscCopy />
+                &nbsp;&nbsp;
+                <AiOutlineExport />
+              </td>
+            </tr>
+            {/* <br /> */}
+            <div style={{height:"5px"}}></div>
+            <tr
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                textAlign: "center",
+                height: "32px",
+                borderRadius: "5px",
+              }}
+            >
+              <td>JOC4</td>
+              <td>Nexus Realty Partners</td>
+              <td>7</td>
+              <td>Sneha Balachander</td>
+              <td>Arul Subramanian</td>
+              <td>Active</td>
+              <td>
+                <IoEyeOutline />
+                &nbsp;
+                <GoPencil />
+                &nbsp;
+                <RiDeleteBin6Line />
+                &nbsp;&nbsp;
+                <VscCopy />
+                &nbsp;&nbsp;
+                <AiOutlineExport />
+              </td>
+            </tr>
+            {/* <br /> */}
+            <div style={{height:"5px"}}></div>
+            <tr
+              style={{
+                backgroundColor: "white",
+                color: "black",
+                textAlign: "center",
+                height: "32px",
                 borderRadius: "5px",
               }}
             >
